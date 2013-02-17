@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+<PreferenceCategory android:title="About">
+    <Preference android:title="@string/help_licenses" 
+        android:summary="@string/help_licenses_desctription">
+        <intent
+			android:targetPackage="com.github.roosi.template"
+            android:targetClass="com.github.roosi.template.LicensesActivity"/>
+    </Preference>
+    <Preference
+        android:key="version" 
+        android:title="@string/app_name"
+        android:summary="x.x.x"/>
+</PreferenceCategory>    
+
+</PreferenceScreen>
