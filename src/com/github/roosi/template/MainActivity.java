@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
@@ -14,11 +15,18 @@ public class MainActivity extends SherlockFragmentActivity {
 	
 	private static final String TAG = "MainActivity";
 	private static final int REQUEST_SHOW_TUTORIAL = 0;
+	private static final int REQUEST_SHOW_AGREEMENT = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);        
+        setContentView(R.layout.activity_main);
+        
+        /*
+        Intent intent = new Intent(this, UserAgreementActivity.class);
+        intent.putExtra(UserAgreementActivity.BUTTONS, true);
+        startActivityForResult(intent, REQUEST_SHOW_AGREEMENT);
+        */
     }
 
     @Override
@@ -26,6 +34,14 @@ public class MainActivity extends SherlockFragmentActivity {
     	
     	if (requestCode == REQUEST_SHOW_TUTORIAL) {
     		// TODO
+    	}
+    	else if (requestCode == REQUEST_SHOW_AGREEMENT) {
+    		if (resultCode == RESULT_OK) {
+    			// TODO
+    		}
+    		else if (resultCode == RESULT_CANCELED) {
+    			// TODO
+    		}
     	}
     }
 

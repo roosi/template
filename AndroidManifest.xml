@@ -8,8 +8,8 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -26,19 +26,23 @@
         </activity>
         <activity
             android:name="com.github.roosi.template.HelpActivity"
-            android:label="@string/menu_help">
+            android:label="@string/menu_help" >
         </activity>
         <activity
             android:name="com.github.roosi.template.SettingsActivity"
-            android:label="@string/menu_settings">
+            android:label="@string/menu_settings" >
         </activity>
         <activity
             android:name="com.github.roosi.template.LicensesActivity"
-            android:label="@string/help_licenses">
+            android:label="@string/help_licenses" >
         </activity>
         <activity
             android:name="com.github.roosi.template.TutorialActivity"
-            android:label="@string/tutorial">
+            android:label="@string/tutorial" >
+        </activity>
+        <activity
+            android:name="com.github.roosi.template.UserAgreementActivity"
+            android:label="@string/user_agreement" >
         </activity>
     </application>
 
