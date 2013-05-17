@@ -35,7 +35,11 @@
         <activity
             android:name="com.github.roosi.template.LicensesActivity"
             android:label="@string/help_licenses">
-        </activity>              
+        </activity>
+        <activity
+            android:name="com.github.roosi.template.TutorialActivity"
+            android:label="@string/tutorial">
+        </activity>
     </application>
 
 </manifest>
